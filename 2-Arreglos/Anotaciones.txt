@@ -1,0 +1,15 @@
+
+
+
+11) Arrays
+
+definir variable
+si no le definimos como let, siempre toma como var
+
+los arrays ya son objetos, que pueden guardar varios datos
+
+
+12) Arrays asociativos
+
+
+

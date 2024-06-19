@@ -1,0 +1,177 @@
+
+0) INTRODUCION ¿Que es JavaScript?
+
+	- Lenguaje de Programacion
+	- Interpretado
+*NO COMPILADO: antiguo donde antes de iniciar tenia que compilarse la informacion
+	- Orientado a Objetos
+*destinado a las clases, herencias, polimorfismo, etc.
+	- Imperativo: *las instrucciones van de linea por linea
+	- Case sensitive (upper and lower case): *es sensible a mayusculas y minusculas
+	- Basado en prototipos / instancias / classless: ya viene con base de prototipos desde Javascript
+	- Tipado debil: *el valor de una variable puede variar en el tiempo
+	- Lenguaje dinamico: *la variable se adapta al dato
+Ej: 1="Dalto" (1 empieza a ser una frase)
+
+
+	- ECMASCRIPT (5.1 y 6, 7, 8, Next)
+*de la version 6 en adelante (Jun'2016)
+-ES.NEXT: *para referirse a cualquier proxima version
+
+
+1) EDITOR DE TEXTO
+
+	- Personalizar Sublime Text 3
+		* Install Package Control [CTRL+SHIFT+P]
+			* blackbird
+			* Color Scheme (Brogrammer)
+			* Set UI (un aspecto diferente)
+			* LiveReload (pide acceso al sistema)
+			* ColorHelper
+			* ColorPicker
+
+	- Otras opciones (VSC, Atom)
+
+
+2) PARA QUE SE USA
+
+	- Dinamismo de los sitios web (siempre del lado del cliente)
+	- Servidor en NodeJS (*o tecnologia "deno" para Backend)
+	- Tecnologias Frontend [Frameworks] como Angular, React o Vue.JS
+*es mas facil y mucho mas rapido
+
+	Otros usos no tan comunes:
+
+	- Inteligencia artificial (TensorFlow)
+	- Plaas electronicas (Jhonny Five) *es como NodeJS
+	- Mobile Apps *con compiladores extraños
+	- Desktop Apps
+	- Etc...
+
+
+3) FORMAS DE ENLAZAR JAVASCRIPT
+
+	- En Linea: dentro del mismo html con clases
+	- Como contenido en la etiqueta <script>
+	- Como contenido en un archivo de formato .js (*esta es la manera optima)
+	- Con un Require (*se va a ver con Node.JS o Modulos)
+
+
+4) VARIABLES
+
+	- Concepto (*es un espacio que guardamos en memoria, variable y lo que contiene)
+	- Ejemplo ("vaso y papel")
+	- Tipos de Datos: String (cadena de texto)*VA ENTRE COMILLAS, Number, Boolean*true/false, Symbol*NO ES DATO PRIMITIVO)
+	- Casos especiales de Datos: Undefined*EXISTE EN EL PROG PERO NO ESTA DECLARADA, Null*SU VALOR ESTA DEFINIDA Y ES NULA!, NaN*NOT A NUMBER_ ;
+*p/Variables que no estan definidas
+	- Tipos de variables (let*SOLO DECLARO LA VARIABLE DENTRO DE ESTE BLOQUE_REGIONAL, var*EN CAMBIO,TIENE ALCANCE GLOBAL y Const*en v6.0 SIEMPRE CONSTANTE/NO PUEDEN CAMBIAR SU VALOR)
+	- Scope (*el alcance de las variables let/var)
+	- Crear multiples variables (separandolas con coma) -> Let nombre 1 = "jorge", nombre2 = "pedro";
+	- Hosting *es posible ejecutar codigos antes de crearse /el efecto 'cascada'
+
+	- Pruebas con Prompt:(*dejas que el usuario ponga su dato para almacenarlo a una variable)
+
+
+5) OPERADORES EN JAVASCRIPT
+	
+	- Operadores de Asignacion: asigna un valor de la izq operando con el de la derecha
+	- Operadores Aritmeticos: son valores numericos y retornan valor numerico
+
+
+6) CONCATENACION
+
+	- Definicion y ejemplo
+	- Con el signo +
+	- Para numeros forzamos string ("" + 9 + 4)
+	- Con concat
+	- Con backtiks y la variable entre ${} ___ el mas utilizado! (alt+96)
+
+
+7) Backtikcs (Bloquote o Acento Grave) y Escape
+
+	- Sin backticks: "linea 1\n\
+				linea 2"
+
+	- Con backtick: ''' linea 1
+				linea 2'
+	
+	- Definicion
+	- Escape de comillas simples
+	- Escape de comillas dobles
+
+
+8) Operadores (Intermedio)
+	- Operadores de Comparacion
+		== no detecta tipo de dato
+		=== si es estrictamente igual
+		! siempre es el contrario
+	- Operadores Logicos
+		AND (&&)
+		OR (||)
+		NOT (!)
+
+9) Camel Case
+	- Definicion: empezar con minuscula y luego una letra Mayuscula __ " parseInt() "
+	- Usos
+	- Ejemplo
+
+
+10) Condicionales
+*Un bloque empieza y termina con llaves*
+	- Definicion y usos (IMG)
+	- If: es el primero
+	- Else If: podemos dar de a 1 opcion (son infinitas opciones)
+	- Else: es para el resto de las variables
+
+
+11) Arrays
+
+	- Definicion y Usos
+	- Formas de crear un array
+*Si no esta el elemento te muestra "undefined"_ no esta definido
+*Se busca la posicion del elemento, NÓ el elemento (0 en vez de 1)
+
+
+12) Arrays Asociativos
+
+	- Definicion
+	- Sintaxis y Usos
+
+
+13) Bucles e Iteracion
+
+	- Definicion y Usos
+	- sentencia while_ es como el IF pero se repiten constantemente
+	- sentencia do while_ primero el 'do' me dice que hacer y luego condiciono con el 'while'
+	- sentencia break
+
+	- sentencia for
+*con 'let' no se puede declarar 2 veces la misma variable (error en consola)__ dentro del mismo bloque; pero si puedo cambiar su valor
+	- sentencia continue__ para saltear una variable dentro del bucle for
+	- sentencia for in (devuelve indice)
+	- sentencia for of (devuelve valor)
+*in y of nos resume el bucle de for (declaracion + condicion + incr/dec)
+
+	------------- 
+
+	- sentencia label
+
+
+14) Funciones
+
+	- Definicion y usos
+*un bloque de codigo va entre llaves {}__ su nombre es para facilitar su repeticion y no volver a escribirla
+	- Formas de crear funciones (y llamarlas)
+*la idea es que cada funcion tenga su caracteristica, no una funcion que haga de todo
+	- Return
+*para que el codigo nos devuelva un tipo de dato
+	- Parametros
+	- Scope
+	- Funciones Flecha
+
+
+15) ForEach
+	- Sintaxis y Usos
+	- Ventajas respecto a for
+	- Desventajas (break, continue)
+
